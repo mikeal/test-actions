@@ -4,11 +4,11 @@ on:
 name: Assign Reviewers
 jobs:
   assign:
-    - name: Mikeal Rogers
-      uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
-      env:
-        reports: [ mikeal ]
-      if: contains(github.event.pull_request.user.login, reports)
-      with: 
-        reviewers: "mikeal"
-        token: ${{ secrets.GITHUB_TOKEN }}
+    name: Mikeal Rogers
+    uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
+    env:
+      reports: [ mikeal ]
+    if: contains(github.event.pull_request.user.login, reports)
+    with:
+      reviewers: "mikeal"
+      token: ${{ secrets.GITHUB_TOKEN }}  
