@@ -9,5 +9,5 @@ jobs:
       uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
       if: contains(github.event.pull_request.user.login, [ mikeal ])
       with:
-      reviewers: "mikeal"
+        reviewers: "mikeal"
       token: ${{ secrets.GITHUB_TOKEN }}  
