@@ -4,6 +4,7 @@ on:
 name: Assign Reviewers
 jobs:
   assign:
+    runs-on: ubuntu-latest
     steps:
     - name: Mikeal Rogers
       uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
