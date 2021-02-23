@@ -11,4 +11,4 @@ jobs:
       if: contains(github.event.pull_request.user.login, [ mikeal ])
       with:
         reviewers: "mikeal"
-      token: ${{ secrets.GITHUB_TOKEN }}  
+        token: ${{ secrets.GITHUB_TOKEN }}  
