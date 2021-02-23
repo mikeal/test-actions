@@ -7,9 +7,7 @@ jobs:
     steps:
     - name: Mikeal Rogers
       uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
-      env:
-        reports: [ mikeal ]
-      if: contains(github.event.pull_request.user.login, reports)
+      if: contains(github.event.pull_request.user.login, [ mikeal ])
       with:
       reviewers: "mikeal"
       token: ${{ secrets.GITHUB_TOKEN }}  
